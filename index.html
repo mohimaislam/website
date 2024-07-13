@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mohima's Website</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script defer src="script.js"></script> <!--for javascript-->
+</head>
+
+<body>
+	<div id="header">
+		<div>
+			<div><img src="myimages\chefgirl.png" alt="chef" height="50" width="50"></div>
+			<ul id="navigation">
+				<li class="active">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="features.html">Features</a>
+				</li>
+				<li>
+					<a href="news.html">News</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="adbox">
+        <div class="clearfix">
+            <img src="myimages/michizzz.png" alt="Img" height="200" width="210" style="padding-bottom: 10%;">
+            <div class="container">
+                <h1><b>Welcome to My Website!</b></h1>
+                <br>
+                
+                <div id="footer" class="greeting">
+                    <input type="text" id="nameInput" placeholder="Your name">
+                    
+                    <button onclick="greetUser()">Submit</button>
+					<br>
+                </div>
+                <p id="greetMessage"></p>
+            </div>
+			<br>
+			<br>
+            <p class="animated-text"><b>This is my cat Michi</b></p>
+        </div>
+    </div>
+	<!-- <div id="contents">
+		<div id="tagline" class="clearfix">
+			<h1>Design With Simplicity.</h1>
+			<div>
+				<p>
+					You can replace all this text with your own text. Want an easier solution for a Free Website?
+				</p>
+				<p>
+					Head straight to Wix and immediately start customizing your website!
+				</p>
+				<p>
+					Wix is an online website builder with a simple drag & drop interface, meaning you do the work online and instantly publish to the web.
+				</p>
+			</div>
+			<div>
+				<p>
+					You can replace all this text with your own text. Want an easier solution for a Free Website?
+				</p>
+				<p>
+					Head straight to Wix and immediately start customizing your website!
+				</p>
+				<p>
+					Wix is an online website builder with a simple drag & drop interface, meaning you do the work online and instantly publish to the web.
+				</p>
+			</div>
+		</div>
+	</div> -->
+	<!-- <div id="footer">
+		<div class="clearfix">
+			<div id="connect">
+				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="SHEESH"></a><a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a><a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a><a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="tumbler"></a>
+			</div>
+			<p>
+				© 2023 Zerotype. All Rights Reserved.
+			</p>
+		</div>
+	</div> -->
+	<br>
+	<footer>
+		<div id="footer">ID: 123456789 | Name: Mohima Islam</div>
+    </footer>
+	<script>
+		function greetUser() {
+    const name = document.getElementById('nameInput').value;
+    const greetMessage = document.getElementById('greetMessage');
+    if (name) {
+        greetMessage.textContent = `Hello, ${name}! Welcome to my website.`;
+    } else {
+        greetMessage.textContent = 'Please enter your name.';
+    }
+}
+	</script>
+</body>
+</html>
